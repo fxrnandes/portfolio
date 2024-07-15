@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Typed from 'typed.js';
+import 'boxicons/css/boxicons.min.css';
 import '../styles/var.css'; 
 import '../styles/reset.css'; 
 import fxrHomeImg from '../assets/fxr-home.png';
 
 const Home = () => {
+  useEffect(() => {
+    const typed = new Typed('.multiple-text', {
+      strings: ['Dev Front-end', 'estudante de engenharia de software'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 2000,
+      loop: true
+    });
+
+    // Limpa o efeito quando o componente for desmontado
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <section className="home" id="home">
       <div className="home-container">
