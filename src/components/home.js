@@ -3,7 +3,6 @@ import '../styles/var.css';
 import '../styles/reset.css'; 
 import fxrHomeImg from '../assets/fxr-home.png';
 
-
 const Home = () => {
   return (
     <section className="home" id="home">
@@ -18,7 +17,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-img">
-      <img src={fxrHomeImg} alt="Imagem home" />
+        <img src={fxrHomeImg} alt="Imagem home" />
       </div>
     </section>
   );
