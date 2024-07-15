@@ -1,6 +1,10 @@
 import React from 'react';
 import '../styles/var.css'; 
 import '../styles/reset.css'; 
+import projetoPacImg from '../assets/projeto-pac.png';
+import projetoRoboticaImg from '../assets/projeto-robotica.png';
+import loadingImg from '../assets/loading.png';
+
 
 const Projects = () => {
   return (
@@ -9,7 +13,7 @@ const Projects = () => {
 
       <div className="projects-container">
         <div className="projects-box">
-          <img src="./assets/projeto-pac.png" alt="Projeto PAC" />
+        <img src={projetoPacImg} alt="Projeto PAC" />
           <div className="projects-layer">
             <h3>Projeto voluntário</h3>
             <p>Landing page de uma organização sem fins lucrativos feita para um projeto de faculdade, fui o responsável pelo front-end com HTML, CSS e JavaScript puros.</p>
@@ -23,7 +27,7 @@ const Projects = () => {
         </div>
 
         <div className="projects-box">
-          <img src="./assets/projeto-robotica.png" alt="Projeto Robótica" />
+        <img src={projetoRoboticaImg} alt="Projeto Robótica" />
           <div className="projects-layer">
             <h3>Projeto robótica</h3>
             <p>Projeto de site para uma matéria da faculdade onde é explicado sobre a robótica e programação de um robô seguidor de linha, feito com HTML, CSS e JavaScript puros.</p>
@@ -37,7 +41,7 @@ const Projects = () => {
         </div>
 
         <div className="projects-box">
-          <img src="./assets/loading.png" alt="Em desenvolvimento" />
+        <img src={loadingImg} alt="Em desenvolvimento" />
           <div className="projects-layer">
             <h3>Em desenvolvimento</h3>
             <p>Projeto em desenvolvimento...</p>

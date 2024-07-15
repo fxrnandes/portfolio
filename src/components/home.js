@@ -1,6 +1,8 @@
 import React from 'react';
 import '../styles/var.css'; 
 import '../styles/reset.css'; 
+import fxrHomeImg from '../assets/fxr-home.png';
+
 
 const Home = () => {
   return (
@@ -16,7 +18,7 @@ const Home = () => {
         </div>
       </div>
       <div className="home-img">
-        <img src="src/imagens/fxr-home.png" alt="" />
+      <img src={fxrHomeImg} alt="Imagem home" />
       </div>
     </section>
   );

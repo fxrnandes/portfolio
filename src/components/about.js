@@ -1,12 +1,13 @@
 import React from 'react';
 import '../styles/var.css'; 
 import '../styles/reset.css'; 
+import fxrDevImg from '../assets/fxr-dev.png';
 
 const About = () => {
   return (
     <section id="about">
       <div className="about-img">
-        <img src="./assets/fxr-dev.png" alt="Imagem do desenvolvedor" />
+      <img src={fxrDevImg} alt="Imagem do desenvolvedor" />
       </div>
       <div className="about-container">
         <h2 className="heading">
