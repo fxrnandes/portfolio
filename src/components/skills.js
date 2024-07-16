@@ -12,7 +12,7 @@ const Skills = () => {
   <div className="skills-box">
     <i className='bx bxl-javascript'></i>
     <h3>JavaScript</h3>
-    <p>Tenho uma boa base do JS. Já entendo bem alguns conceitos e tenho facilidade e vontade em aprender.</p>
+    <p>Tenho uma boa base de JS. Já entendo bem alguns conceitos e tenho facilidade e a vontade de querer aprender.</p>
   </div>
 
   <div className="skills-box">
@@ -26,14 +26,14 @@ const Skills = () => {
     <i className='bx bxl-css3'></i>
     <h3>CSS3</h3>
     <p> Tenho noção do CSS3 como flexbox, grid, seletores, variáveis, herança, especificidade, fontes, medidas,
-      unidades, posicionamento, pseudo classes, pseudo elementos, estilos de texto, media queries, entre outros.
+      unidades, posicionamento, pseudo classes, pseudo elementos, estilos de texto, media queries, animações, entre outros.
     </p>
   </div>
 
   <div className="skills-box">
     <i className='bx bxl-react'></i>
     <h3>React JS</h3>
-    <p>Possuo algum conhecimento em Vue e atualmente tentando me especializar no framework.</p>
+    <p>Possuo algum conhecimento em ReactJS e atualmente tentando me especializar nesse framework, já que é uma viso me tornar um dev front-end.</p>
   </div>
 
   <div className="skills-box">

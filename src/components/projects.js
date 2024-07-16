@@ -17,13 +17,12 @@ const Projects = () => {
         <img src={projetoPacImg} alt="Projeto PAC" />
           <div className="projects-layer">
             <h3>Projeto voluntário</h3>
-            <p>Landing page de uma organização sem fins lucrativos feita para um projeto de faculdade, fui o responsável pelo front-end com HTML, CSS e JavaScript puros.</p>
-            <a className="a1" href="https://project-pac.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <i className='bx bx-link-external'></i>
-            </a>
-            <a className="a2" href="https://github.com/fxrnandes/project-pac" target="_blank" rel="noopener noreferrer">
-              <i className='bx bxl-github'></i>
-            </a>
+            <p>Landing page de uma ONG feita para um projeto de faculdade, onde fui o responsável pelo front-end com HTML, CSS e JS puros.</p>
+            <div className="links">
+              <a className="a2" href="https://github.com/GabrielWendorff/projectPAC" target="_blank" rel="noopener noreferrer">
+                <i className='bx bxl-github'></i>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -31,13 +30,15 @@ const Projects = () => {
         <img src={projetoRoboticaImg} alt="Projeto Robótica" />
           <div className="projects-layer">
             <h3>Projeto robótica</h3>
-            <p>Projeto de site para uma matéria da faculdade onde é explicado sobre a robótica e programação de um robô seguidor de linha, feito com HTML, CSS e JavaScript puros.</p>
-            <a className="a1" href="https://site-pac.netlify.app/circ" target="_blank" rel="noopener noreferrer">
-              <i className='bx bx-link-external'></i>
-            </a>
-            <a className="a2" href="https://github.com/fxrnandes/site-PAC" target="_blank" rel="noopener noreferrer">
-              <i className='bx bxl-github'></i>
-            </a>
+            <p>Projeto de site feito para uma matéria da faculdade sobre o tema de robótica e programação de um robô seguidor de linha, feito com HTML, CSS e JS puros.</p>
+            <div className="links">
+              <a className="a1" href="https://site-pac.netlify.app/circ" target="_blank" rel="noopener noreferrer">
+                <i className='bx bx-link-external'></i>
+              </a>
+              <a className="a2" href="https://github.com/fxrnandes/site-PAC" target="_blank" rel="noopener noreferrer">
+                <i className='bx bxl-github'></i>
+              </a>
+            </div>
           </div>
         </div>
 

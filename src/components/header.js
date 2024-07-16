@@ -6,13 +6,12 @@ import '../styles/reset.css';
 const Header = () => {
   return (
     <header>
-      <div className="logo">Vinicius Fernandes</div>
+      <div className="logo">Vinicius Fernandes - dev</div>
       <nav className="navbar">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="#about">Sobre</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#projects">Projetos</a>
       </nav>
       <div id="menu-icon" className="bx bx-menu"></div>
     </header>
