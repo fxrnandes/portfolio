@@ -1,0 +1,51 @@
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    background: var(--second-bg-color);
+    min-height: 100%;
+    padding: 10rem 2rem;
+  }
+  .about-img img {
+    width: 30vw;
+    border-radius: 30%;
+  }
+  
+  .about-container-page {
+    min-height: 100vh;
+    padding: 8rem 2rem;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--text-color);
+  }
+  
+  .about-container h2 {
+    text-align: left;
+    line-height: 1.2;
+  }
+  
+  .about-container h3 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+  }
+  
+  .about-container p {
+    font-size: 1.4rem;
+    margin: 2rem 0 3rem;
+    color: var(--text-color);
+  }
+  
+  li {
+    font-size: 1.4rem;
+    margin-top: -1.5rem;
+    color: var(--text-color);
+  }
+  
+  .about-container strong {
+    font-size: 1.6rem;
+  }
+  

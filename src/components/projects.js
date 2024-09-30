@@ -2,6 +2,7 @@ import React from 'react';
 import 'boxicons/css/boxicons.min.css';
 import '../styles/var.css'; 
 import '../styles/reset.css'; 
+import '../styles/projects.css'; 
 import projetoPacImg from '../assets/projeto-pac.png';
 import projetoRoboticaImg from '../assets/projeto-robotica.png';
 import loadingImg from '../assets/loading.png';
@@ -30,7 +31,7 @@ const Projects = () => {
         <img src={projetoRoboticaImg} alt="Projeto Robótica" />
           <div className="projects-layer">
             <h3>Projeto robótica</h3>
-            <p>Projeto de site feito para uma matéria da faculdade sobre o tema de robótica e programação de um robô seguidor de linha, feito com HTML, CSS e JS puros.</p>
+            <p>Meu primeiro projeto de site feito para uma matéria da faculdade sobre o tema de robótica e programação de um robô seguidor de linha, feito com HTML, CSS e JS puros.</p>
             <div className="links">
               <a className="a1" href="https://site-pac.netlify.app/circ" target="_blank" rel="noopener noreferrer">
                 <i className='bx bx-link-external'></i>

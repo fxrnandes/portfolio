@@ -2,6 +2,7 @@ import React from 'react';
 import 'boxicons/css/boxicons.min.css';
 import '../styles/var.css'; 
 import '../styles/reset.css'; 
+import '../styles/about.css'
 import fxrDevImg from '../assets/fxr-dev.png';
 
 const About = () => {

@@ -1,0 +1,42 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem 9%;
+    background-color: var(--bn-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .header.stickey {
+    position: sticky;
+    margin-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 1.9rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+  }
+  
+  .navbar a {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 2.4rem;
+  }
+  
+  .navbar a:hover {
+    color: var(--main-color);
+    transition: 0.2s ease;
+    text-shadow: 0 0 2rem var(--main-color);
+  }
+  
+  #menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+  }

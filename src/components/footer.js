@@ -2,6 +2,7 @@ import React from 'react';
 import 'boxicons/css/boxicons.min.css';
 import '../styles/var.css'; 
 import '../styles/reset.css'; 
+import '../styles/footer.css'; 
 
 const Footer = () => {
   return (
