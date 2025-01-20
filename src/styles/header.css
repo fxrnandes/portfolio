@@ -45,57 +45,74 @@ header {
   
   /* Telas menores que 768px (tablets e celulares em modo paisagem) */
   @media (max-width: 768px) {
-    header {
-      padding: 1rem 5%;
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: -100%; /* Escondido fora da tela, à direita */
+      height: 100%;
+      width: 50%; /* Largura da aba */
+      background: var(--bn-color);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Alinha itens à esquerda */
+      padding: 8rem 1rem 0rem 5rem; /* Espaçamento interno */
+      transition: right 0.3s ease; /* Animação suave */
+      z-index: 100; /* Sobrepor ao conteúdo */
+      box-shadow: -2px 0 10px var(--main-color);
     }
   
-    .logo {
-      font-size: 1.6rem;
+    .navbar.active {
+      right: 0; /* Move a aba para dentro da tela */
     }
   
     .navbar a {
-      font-size: 1.3rem;
-      margin-left: 1.5rem;
+      margin: 1rem -2rem 1rem;
+      width: 100%;
+      text-align: center; /* Alinha os links à esquerda */
+      padding: 0.5rem 0.5rem; /* Adiciona espaço interno */
+      transition: color 0.3s ease; /* Transição suave para hover */
+    }
+  
+    .navbar a:last-child {
+      border-bottom: none; /* Remove a linha do último item */
+    }
+  
+    .navbar a:hover {
+      color: var(--main-color); /* Altera a cor no hover */
     }
   
     #menu-icon {
       display: block;
       cursor: pointer;
+      position: fixed; /* Ícone fixo */
+      top: 1rem; /* Distância do topo */
+      right: 1rem; /* Alinhado à direita */
+      font-size: 3rem;
+      z-index: 200; /* Sobrepõe ao menu */
+      color: var(--text-color);
     }
   
-    .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: var(--bn-color);
-      display: none;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navbar.active {
-      display: flex;
-    }
-  
-    .navbar a {
-      margin: 1rem 0;
+    .navbar.active #menu-icon {
+      position: absolute; /* Ícone dentro da aba */
+      top: 1rem;
+      right: 1rem; /* Mantém o ícone à direita da aba */
+      z-index: 300; /* Garante que esteja acima do conteúdo da aba */
     }
   }
+  
   
   /* Telas menores que 480px (celulares em modo retrato) */
   @media (max-width: 480px) {
     header {
-      padding: 0.8rem 4%;
+      padding: 1.5rem 4%;
     }
   
     .logo {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   
     .navbar a {
       font-size: 1.2rem;
-      margin-left: 1rem;
     }
   
     #menu-icon {
