@@ -22,3 +22,41 @@ footer {
     font-size: 1rem;
   }
   
+  /* Media Queries para dispositivos menores */
+  
+  /* Telas menores que 768px (tablets e celulares em modo paisagem) */
+  @media (max-width: 768px) {
+    footer .social-media {
+      flex-direction: column;
+      margin: -1.5rem 0;
+    }
+  
+    footer h2 {
+      font-size: 1.3rem;
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Telas menores que 480px (celulares em modo retrato) */
+  @media (max-width: 480px) {
+    footer {
+      padding: 0.5rem;
+    }
+  
+    footer .social-media {
+      flex-direction: column;
+      margin: -1rem 0;
+    }
+  
+    footer h2 {
+      font-size: 1.1rem;
+    }
+  
+    footer p {
+      font-size: 0.85rem;
+    }
+  }
+  
