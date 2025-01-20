@@ -56,13 +56,12 @@
   @media (max-width: 768px) {
     #about {
       flex-direction: column;
-      padding: 8rem 1rem;
+      padding: 5rem 5rem;
       text-align: center;
     }
   
     .about-img img {
-      width: 50vw;
-      margin-bottom: 2rem;
+      display: none;
     }
   
     .heading {
@@ -83,6 +82,7 @@
   
     li {
       font-size: 1.2rem;
+      display: inline-block;
     }
   
     .about-container strong {
@@ -93,11 +93,11 @@
   /* Telas menores que 480px (celulares em modo retrato) */
   @media (max-width: 480px) {
     #about {
-      padding: 6rem 1rem;
+      padding: 2rem 1rem;
     }
   
     .about-img img {
-      width: 70vw;
+      width: none;
     }
   
     .heading {

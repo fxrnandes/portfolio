@@ -13,45 +13,41 @@ const Skills = () => {
   <div className="skills-box">
     <i className='bx bxl-javascript'></i>
     <h3>JavaScript</h3>
-    <p>Tenho uma boa base de JS. Já entendo bem alguns conceitos e tenho facilidade e a vontade de querer aprender.</p>
   </div>
 
   <div className="skills-box">
     <i className='bx bxl-html5'></i>
     <h3>Html5</h3>
-    <p>Conheço conceitos do HTML5 como elementos semânticos, meta tags, atributos, hierarquia de elementos,
-      responsividade, importação de fontes, formatação de textos, formulários, etc.</p>
   </div>
 
   <div className="skills-box">
     <i className='bx bxl-css3'></i>
     <h3>CSS3</h3>
-    <p> Tenho noção do CSS3 como flexbox, grid, seletores, variáveis, herança, especificidade, fontes, medidas,
-      unidades, posicionamento, pseudo classes, pseudo elementos, estilos de texto, media queries, animações, entre outros.
-    </p>
   </div>
 
   <div className="skills-box">
     <i className='bx bxl-react'></i>
     <h3>React JS</h3>
-    <p>Possuo algum conhecimento em ReactJS e atualmente tentando me especializar nesse framework, já que é uma viso me tornar um dev front-end.</p>
+  </div>
+
+  <div className="skills-box">
+    <i className='bx bxl-flutter'></i>
+    <h3>Flutter</h3>
+  </div>
+
+  <div className="skills-box">
+    <i className='bx bxl-typescript'></i>
+    <h3>Typescript</h3>
   </div>
 
   <div className="skills-box">
     <i className='bx bxl-git'></i>
     <h3>Git</h3>
-    <p>
-      Tenho noção do Git com os comando para versionamento de código como git add, commit, push, branch, status,
-      clone dos repositórios, configuração do SSH, estado dos arquivos, remoção de arquivos pelo terminal, entre
-      outras coisas.
-    </p>
   </div>
 
   <div className="skills-box">
     <i className='bx bxl-github'></i>
     <h3>GitHub</h3>
-    <p>Prática no GitHub na criação de repositórios, commits, clone repositórios, fazer forks, hospedagem no github
-      pages, criação de readmes, entre outras operações.</p>
   </div>
   </div>
     </section>

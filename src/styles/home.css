@@ -125,8 +125,7 @@
     }
   
     .home-img {
-      width: 100%;
-      padding-top: 2rem;
+      display: none;
     }
   
     .home-img img {

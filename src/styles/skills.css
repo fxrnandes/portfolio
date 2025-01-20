@@ -9,7 +9,7 @@
   
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     color: var(--text-color);
   }
@@ -30,19 +30,13 @@
   
   .skills-box i {
     padding-top: 1rem;
-    font-size: 5rem;
+    font-size: 8rem;
     color: var(--main-color);
   }
   
   .skills-box h3 {
     font-size: 1.8rem;
-  }
-  
-  .skills-box p {
-    font-size: 1.2rem;
-    margin: 1rem 2.5rem 2rem;
-    text-align: center;
-    width: 85%;
+    padding-bottom: 1rem;
   }
   
   /* Media Queries para mobile */
@@ -61,11 +55,6 @@
     .skills-box h3 {
       font-size: 1.6rem;
     }
-  
-    .skills-box p {
-      font-size: 1.1rem;
-      margin: 1rem 1.5rem;
-    }
   }
   
   /* Telas menores que 480px (celulares em modo retrato) */
@@ -81,11 +70,6 @@
   
     .skills-box h3 {
       font-size: 1.4rem;
-    }
-  
-    .skills-box p {
-      font-size: 1rem;
-      margin: 1rem;
     }
   
     #skills {

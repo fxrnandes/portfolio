@@ -27,8 +27,10 @@ footer {
   /* Telas menores que 768px (tablets e celulares em modo paisagem) */
   @media (max-width: 768px) {
     footer .social-media {
-      flex-direction: column;
-      margin: -1.5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -2rem 0rem 1rem 0rem;
     }
   
     footer h2 {
@@ -46,17 +48,12 @@ footer {
       padding: 0.5rem;
     }
   
-    footer .social-media {
-      flex-direction: column;
-      margin: -1rem 0;
-    }
-  
     footer h2 {
       font-size: 1.1rem;
     }
   
     footer p {
-      font-size: 0.85rem;
+      font-size: 0.5rem;
     }
   }
   

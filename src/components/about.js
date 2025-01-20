@@ -20,7 +20,7 @@ const About = () => {
         <p>
           <strong>Olá! Me chamo Vinicius Fernandes e sou um desenvolvedor front-end em formação!</strong>
         </p>
-        <p>Cursando o 4° semestre de engenharia de software, Universidade Católica de Santa Catarina</p>
+        <p>Cursando o 5° semestre de engenharia de software, Universidade Católica de Santa Catarina</p>
         <ul>
           <li>Previsão de conclusão em 2026</li>
         </ul>
