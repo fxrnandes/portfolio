@@ -15,8 +15,8 @@ Este projeto foi iniciado com [Create React App](https://github.com/facebook/cre
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/usuario/meu-portfolio.git
-cd meu-portfolio
+git clone https://github.com/fxrnandes/react_portfolio
+cd react_portfolio
 ```
 
 ### 2. Instalar as Dependências
