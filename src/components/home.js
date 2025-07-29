@@ -28,7 +28,7 @@ const Home = () => {
         <h3>Olá, eu me chamo</h3>
         <h1>Vinicius Fernandes</h1>
         <h3>E sou um <span className="multiple-text"></span></h3>
-        <a  href="/Currículo - Vinicius Dev.pdf" download="Currículo - Vinicius Dev.pdf" target="_blank" rel="noreferrer" className="btn">Download CV <i className='bx bx-arrow-to-bottom'></i></a>
+        <a  href="/Currículo - Vinicius Dev.pdf" download="Currículo Vinicius Full Stack.pdf" target="_blank" rel="noreferrer" className="btn">Download CV <i className='bx bx-arrow-to-bottom'></i></a>
         <div className="social-media">
           <a href="https://github.com/fxrnandes" target="_blank" rel="noreferrer"><i className='bx bxl-github'></i></a>
           <a href="https://www.linkedin.com/in/fernandes-vini/" target="_blank" rel="noreferrer"><i className='bx bxl-linkedin'></i></a>

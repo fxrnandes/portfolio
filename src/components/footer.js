@@ -16,7 +16,7 @@ const Footer = () => {
           <i className='bx bxl-linkedin'></i>
         </a>
       </div>
-      <p> Copyright &copy; 2024, Vinicius Fernandes Carvalho | All rights reserved.</p>
+      <p> Copyright &copy; 2025, Vinicius Fernandes Carvalho | All rights reserved.</p>
     </footer>
   );
 };
