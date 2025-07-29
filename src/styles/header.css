@@ -30,9 +30,9 @@ header {
   }
   
   .navbar a:hover {
-    color: var(--main-color);
+    color: var(--text-color);
     transition: 0.2s ease;
-    text-shadow: 0 0 2rem var(--main-color);
+    text-shadow: 0 0 2rem var(--text-color);
   }
   
   #menu-icon {
