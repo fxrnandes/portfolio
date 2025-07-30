@@ -1,6 +1,36 @@
 :root {
-    --bn-color: #444444;
-    --second-bg-color: #7A7A7A;
-    --text-color: #F5F5F5;
-    --main-color: #CCCCCC;
+    /* Cores principais */
+    --light-gray: #CCCCCC;
+    --dark-gray: #444444;
+    --gray: #7A7A7A;
+    --white: #F5F5F5;
+    --black: rgba(0, 0, 0, 0.8);
+    
+    /* Transparências para glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-overlay: rgba(0, 0, 0, 0.7);
+    
+    /* Bordas */
+    --border-color: rgba(255, 255, 255, 0.2);
+    --border-dark: rgba(0, 0, 0, 0.1);
+    
+    /* Sombras */
+    --box-shadow: rgba(0, 0, 0, 0.2);
+    --glow-shadow: rgba(255, 255, 255, 0.3);
+    
+    /* Cores das tecnologias */
+    --javascript-color: #f7df1e;
+    --nodejs-color: #68bc45;
+    --python-color: #4584b6;
+    --react-color: #61dafb;
+    --flutter-color: #02569b;
+    --typescript-color: #3178c6;
+    --cpp-color: #00599c;
+    --nextjs-color: #000000;
+    --git-color: #f05032;
+    --github-color: #181717;
+    
+    /* Gradientes especiais */
+    --gradient-strong: rgba(120, 119, 198, 0.1);
+    --gradient-light: rgba(255, 255, 255, 0.2);
   }

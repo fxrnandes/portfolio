@@ -1,99 +1,202 @@
 #skills {
-    padding: 10rem 6rem;
-    padding-top: 4.5rem;
+    padding: 8rem 2rem;
+    background: linear-gradient(-135deg, var(--gray) 0%, var(--white) 50%, var(--gray) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  .heading {
-    margin-bottom: 2rem;
+
+  #skills .heading {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    color: var(--gray);
+  }
+
+  .heading span {
+    color: var(--black);
   }
   
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    color: var(--text-color);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--white);
   }
   
   .skills-container .skills-box {
-    background: var(--second-bg-color);
-    padding: 0rem;
+    background: var(--gray);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    padding: 2rem 1rem;
     border-radius: 2rem;
     text-align: center;
-    transition: 0.5s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px var(--box-shadow);
+  }
+
+  .skills-container .skills-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--glass-bg), transparent);
+    transition: left 0.5s ease;
   }
   
+  .skills-container .skills-box:hover::before {
+    left: 100%;
+  }
+
   .skills-container .skills-box:hover {
-    transform: scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--border-color);
+    box-shadow: 0 20px 40px var(--box-shadow);
   }
   
-  .skills-box i {
-    padding-top: 1rem;
-    font-size: 8rem;
-    color: var(--text-color);
+  .skills-box i,
+  .skills-box svg {
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    color: var(--white);
+    margin: 0 auto 1rem auto;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .skills-box svg {
+    fill: currentColor;
+  }
+
+  .skills-box:hover i,
+  .skills-box:hover svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px var(--glow-shadow));
   }
   
   .skills-box h3 {
-    font-size: 1.8rem;
-    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0;
+    transition: color 0.3s ease;
   }
+
+  /* Cores específicas para cada tecnologia */
+  .skills-box:nth-child(1):hover i { color: var(--javascript-color); } /* JavaScript */
+  .skills-box:nth-child(2):hover i { color: var(--nodejs-color); } /* Node.js */
+  .skills-box:nth-child(3):hover i { color: var(--python-color); } /* Python */
+  .skills-box:nth-child(4):hover i { color: var(--react-color); } /* React */
+  .skills-box:nth-child(5):hover i { color: var(--flutter-color); } /* Flutter */
+  .skills-box:nth-child(6):hover i { color: var(--typescript-color); } /* TypeScript */
+  .skills-box:nth-child(7):hover svg { color: var(--cpp-color); } /* C++ */
+  .skills-box:nth-child(8):hover svg { color: var(--nextjs-color); } /* Next.js */
+  .skills-box:nth-child(9):hover i { color: var(--git-color); } /* Git */
+  .skills-box:nth-child(10):hover i { color: var(--github-color); } /* GitHub */
   
-  /* Media Queries */
+  /* Media Queries responsivas */
 
+  /* Telas menores que 1280px */
   @media (max-width: 1280px) {
-    @media (min-width: 1280px) {
-      .skills-container {
-          grid-template-columns: repeat(4, 1fr);
-          gap: 1rem;
-          justify-items: center; /* Isso centraliza todos os itens */
-      }
+    .skills-container {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.8rem;
+    }
 
-      .skills-container > .skills-box:nth-last-child(-n+4) {
-          justify-self: center; /* Centraliza os itens da última linha */
-      }
+    #skills .heading {
+      font-size: 2.2rem;
+    }
+
+    .skills-box i,
+    .skills-box svg {
+      font-size: 3.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin: 0 auto 1rem auto;
+    }
+
+    .skills-box h3 {
+      font-size: 1.2rem;
+    }
+
+    .skills-container .skills-box {
+      padding: 1.8rem 1rem;
+    }
   }
 
-    .skills-box i {
-        font-size: 6rem;
+  /* Telas menores que 768px (tablets e celulares em modo paisagem) */
+  @media (max-width: 768px) {
+    #skills {
+      padding: 6rem 1.5rem;
     }
 
-    .skills-box h3 {
-        font-size: 1.8rem;
-    }
-}
-
-/* Telas menores que 768px (tablets e celulares em modo paisagem) */
-@media (max-width: 768px) {
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.5rem;
     }
 
-    .skills-box i {
-        font-size: 4rem;
+    #skills .heading {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .skills-box i,
+    .skills-box svg {
+      font-size: 3rem;
+      width: 3rem;
+      height: 3rem;
+      margin: 0 auto 0.8rem auto;
     }
 
     .skills-box h3 {
-        font-size: 1.6rem;
+      font-size: 1.1rem;
     }
-}
+
+    .skills-container .skills-box {
+      padding: 1.5rem 0.8rem;
+    }
+  }
   
   /* Telas menores que 480px (celulares em modo retrato) */
   @media (max-width: 480px) {
+    #skills {
+      padding: 5rem 1rem;
+    }
+
     .skills-container {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+
+    #skills .heading {
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem;
     }
   
-    .skills-box i {
-      font-size: 3.5rem;
+    .skills-box i,
+    .skills-box svg {
+      font-size: 2.5rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 0 auto 0.6rem auto;
     }
   
     .skills-box h3 {
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
-  
-    #skills {
-      padding: 8rem 2rem;
+
+    .skills-container .skills-box {
+      padding: 1.2rem 0.6rem;
     }
   }
   

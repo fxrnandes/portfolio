@@ -2,58 +2,121 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    background-color: var(--bn-color);
-    color: var(--text-color);
+    padding: 2rem 2rem 2rem;
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 30% 20%, var(--glass-bg-light) 0%, transparent 50%),
+      radial-gradient(circle at 70% 80%, var(--glass-bg-light) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  footer h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
   }
   
   footer .social-media {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -2rem 3rem 1rem 0rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
   }
-  
-  footer h2 {
-    font-size: 1.5rem;
+
+  footer .social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--box-shadow);
+  }
+
+  footer .social-media a:hover {
+    background: var(--white);
+    color: var(--black);
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 25px var(--glow-shadow);
   }
   
   footer p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: var(--white);
+    line-height: 1.5;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
   }
   
-  /* Media Queries para dispositivos menores */
+  /* Media Queries para responsividade */
   
-  /* Telas menores que 768px (tablets e celulares em modo paisagem) */
+  /* Telas menores que 768px */
   @media (max-width: 768px) {
-    footer .social-media {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: -2rem 0rem 1rem 0rem;
+    footer {
+      padding: 2.5rem 1rem 1.5rem;
     }
+
+    footer h2 {
+      font-size: 1.5rem;
+    }
+
+    footer .social-media a {
+      width: 2.8rem;
+      height: 2.8rem;
+      font-size: 1.2rem;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+    }
+  }
   
+  /* Telas menores que 480px */
+  @media (max-width: 480px) {
+    footer {
+      padding: 2rem 1rem 1rem;
+    }
+
     footer h2 {
       font-size: 1.3rem;
     }
-  
-    footer p {
-      font-size: 0.9rem;
-    }
-  }
-  
-  /* Telas menores que 480px (celulares em modo retrato) */
-  @media (max-width: 480px) {
-    footer {
-      padding: 0.5rem;
-    }
-  
-    footer h2 {
+
+    footer .social-media a {
+      width: 2.5rem;
+      height: 2.5rem;
       font-size: 1.1rem;
     }
-  
+
     footer p {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
     }
   }
   
