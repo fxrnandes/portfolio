@@ -92,7 +92,7 @@
   background: var(--glass-bg);
   border-radius: 1rem;
   display: inline-block;
-  border: 1px solid var(--border-medium);
+  border: 1px solid var(--border-color);
 }
 
 .about-container p {

@@ -51,6 +51,7 @@ header {
   .navbar a:hover {
     color: var(--white);
     background-color: var(--dark-gray);
+    border-radius: 2rem;
     transform: translateY(-2px);
   }
   

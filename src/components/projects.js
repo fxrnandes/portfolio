@@ -46,7 +46,7 @@ const Projects = () => {
                 <p>Meu primeiro projeto de site feito para uma matéria da faculdade sobre o tema de robótica e programação de um robô seguidor de linha, feito com HTML, CSS e JS puros.</p>
               </div>
               <div className="projects-links">
-                <a href="https://site-pac.netlify.app/circ" target="_blank" rel="noopener noreferrer">
+                <a href="https://site-pac.netlify.app/" target="_blank" rel="noopener noreferrer">
                   <i className='bx bx-link-external'></i>
                 </a>
                 <a href="https://github.com/fxrnandes/site-PAC" target="_blank" rel="noopener noreferrer">
