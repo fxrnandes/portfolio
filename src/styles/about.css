@@ -5,7 +5,7 @@
   align-items: center;
   gap: 4rem;
   padding: 8rem 2rem;
-  background: linear-gradient(135deg, var(--dark-gray) 0%, var(--light-gray) 50%, var(--dark-gray) 100%);
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--dark-blue-gradient) 50%, var(--dark-blue) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -61,7 +61,7 @@
   flex: 1;
   position: relative;
   z-index: 2;
-  background: var(--glass-bg);
+  background: var(--dark-blue-glass);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-color);
@@ -79,7 +79,7 @@
 }
 
 .about-container h2 span {
-  color: var(--black);
+  color: var(--blue);
   position: relative;
 }
 
@@ -128,7 +128,7 @@
   content: '▶';
   position: absolute;
   left: 1rem;
-  color: var(--black);
+  color: var(--blue);
   font-size: 0.8rem;
   transform: translateY(2px);
 }

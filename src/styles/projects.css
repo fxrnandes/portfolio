@@ -1,5 +1,5 @@
 #projects {
-  background: linear-gradient(135deg, var(--dark-gray) 0%, var(--light-gray) 50%, var(--dark-gray) 100%);
+  background: linear-gradient(-135deg, var(--gray) 0%, var(--white) 50%, var(--light-gray) 100%);
   min-height: 100vh;
   padding: 8rem 2rem;
   position: relative;
@@ -29,7 +29,7 @@
 }
 
 #projects .heading span{
-  color: var(--black);
+  color: var(--dark-blue);
 }
 
 .projects-container {
@@ -38,14 +38,13 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  color: var(--gray);
   position: relative;
   z-index: 2;
 }
 
 .projects-container .projects-box {
   position: relative;
-  background: var(--dark-gray);
+  background: var(--dark-blue);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 2rem;
