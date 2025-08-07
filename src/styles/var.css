@@ -1,10 +1,15 @@
 :root {
-    /* Cores principais */
+    /* Cores neutras */
     --light-gray: #CCCCCC;
     --dark-gray: #444444;
     --gray: #7A7A7A;
     --white: #F5F5F5;
     --black: rgba(0, 0, 0, 0.8);
+
+    /* Cores neutras */
+    --dark-blue: #05081b;
+    --dark-blue-glass: #05081bde; 
+    --blue: #3649ff;
     
     /* Transparências para glassmorphism */
     --glass-bg: rgba(255, 255, 255, 0.1);

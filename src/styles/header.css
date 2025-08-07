@@ -6,7 +6,7 @@ header {
     width: auto;
     max-width: 90%;
     padding: 1rem 3rem;
-    background-color: var(--black);
+    background-color: var(--dark-blue-glass);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 2rem;
@@ -49,7 +49,6 @@ header {
   }
   
   .navbar a:hover {
-    background-color: var(--dark-gray);
     border-radius: 2rem;
     transform: translateY(-2px);
   }

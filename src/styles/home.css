@@ -47,7 +47,7 @@
 
   .home-container .intro-text {
     font-size: 1.2rem;
-    color: var(--black);
+    color: var(--dark-blue);
     font-weight: 500;
     margin-bottom: 0.5rem;
     opacity: 0;
@@ -58,7 +58,7 @@
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     line-height: 1.2;
-    color: var(--black);
+    color: var(--dark-blue);
     margin-bottom: 1rem;
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards 0.4s;
@@ -66,7 +66,7 @@
 
   .home-container .typed-container {
     font-size: clamp(1.2rem, 3vw, 1.6rem);
-    color: var(--gray);
+    color: var(--dark-blue-glass);
     font-weight: 600;
     margin-bottom: 2rem;
     min-height: 4rem;
@@ -172,14 +172,31 @@
     border: 1px solid var(--border-dark);
     border-radius: 50%;
     font-size: 1.3rem;
-    color: var(--black);
+    color: var(--dark-blue);
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .social-media a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--gradient-light), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .social-media a:hover::before {
+    left: 100%;
   }
   
   .social-media a:hover {
-    background: var(--black);
+    background: linear-gradient(155deg, var(--dark-blue) 40%, var(--blue) 100%);
     color: var(--white);
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 8px 25px var(--box-shadow);
@@ -191,7 +208,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
-    background: var(--black);
+    background: var(--dark-blue);
     border: none;
     border-radius: 50px;
     font-size: 1rem;
@@ -223,7 +240,7 @@
   .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px var(--box-shadow);
-    background: linear-gradient(135deg, var(--black) 0%, var(--gray) 100%);
+    background: linear-gradient(155deg, var(--dark-blue) 40%, var(--blue) 100%);
   }
   
   .btn i {
