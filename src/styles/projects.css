@@ -20,7 +20,7 @@
 }
 
 #projects .heading{
-  color: var(--white);
+  color: var(--dark-blue);
   text-align: center;
   margin-bottom: 4rem;
   font-size: 2.5rem;
@@ -29,7 +29,7 @@
 }
 
 #projects .heading span{
-  color: var(--dark-blue);
+  color: var(--blue);
 }
 
 .projects-container {
@@ -128,7 +128,7 @@
 
 .projects-links a:hover {
   background: var(--white);
-  color: var(--dark-gray);
+  color: var(--dark-blue);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px var(--glow-shadow);
 }

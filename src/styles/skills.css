@@ -1,21 +1,38 @@
 #skills {
     padding: 8rem 2rem;
-    background: linear-gradient(-135deg, var(--gray) 0%, var(--white) 50%, var(--gray) 100%);
+    background: linear-gradient(-135deg, var(--dark-blue) 0%, var(--dark-blue-gradient) 50%, var(--dark-blue) 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
   }
+
+  #skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, var(--dark-blue) 0%, transparent 90%),
+    radial-gradient(circle at 80% 20%, var(--blue) 0%, transparent 50%);
+  pointer-events: none;
+}
 
   #skills .heading {
     text-align: center;
     margin-bottom: 4rem;
     font-size: 2.5rem;
-    color: var(--gray);
+    color: var(--white);
+    position: relative;
+    z-index: 2;
   }
 
   .heading span {
-    color: var(--black);
+    color: var(--blue);
   }
   
   .skills-container {
@@ -28,7 +45,7 @@
   }
   
   .skills-container .skills-box {
-    background: var(--gray);
+    background: var(--dark-blue);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--border-color);
@@ -61,6 +78,7 @@
     transform: translateY(-10px) scale(1.02);
     border-color: var(--border-color);
     box-shadow: 0 20px 40px var(--box-shadow);
+    background: linear-gradient(135deg, var(--dark-blue) 5%, var(--blue) 100%);
   }
   
   .skills-box i,
