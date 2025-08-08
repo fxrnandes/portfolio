@@ -11,21 +11,27 @@ const Header = () => {
     setMenuActive(!menuActive);
   };
 
+  const handleLinkClick = () => {
+    setMenuActive(false); // Fecha o menu ao clicar em um link
+  };
+
   return (
-    <header>
-      <div className="logo">Vinicius Fernandes - dev</div>
-      <nav className={`navbar ${menuActive ? 'active' : ''}`}>
-        <a href="#home">Home</a>
-        <a href="#about">Sobre</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projetos</a>
-      </nav>
+    <>
       <div
         id="menu-icon"
-        className={`bx ${menuActive ? 'bx-x close' : 'bx-menu'}`}
+        className={`bx ${menuActive ? 'bx-x active' : 'bx-menu'}`}
         onClick={toggleMenu}
-      ></div>
-    </header>
+      >
+      </div>
+      <header>
+        <nav className={`navbar ${menuActive ? 'active' : ''}`}>
+          <a href="#home" onClick={handleLinkClick}>Home</a>
+          <a href="#about" onClick={handleLinkClick}>Sobre</a>
+          <a href="#skills" onClick={handleLinkClick}>Skills</a>
+          <a href="#projects" onClick={handleLinkClick}>Projetos</a>
+        </nav>
+      </header>
+    </>
   );
 };
 
