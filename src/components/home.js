@@ -4,7 +4,7 @@ import 'boxicons/css/boxicons.min.css';
 import '../styles/var.css'; 
 import '../styles/reset.css'; 
 import '../styles/home.css'; 
-import fxrHomeImg from '../assets/fxr-home.png';
+import fxrHomeImg from '../assets/fxr-dev.png';
 
 const Home = () => {
   useEffect(() => {
