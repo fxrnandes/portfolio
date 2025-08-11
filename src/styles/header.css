@@ -107,7 +107,7 @@ header {
   .mobile-menu-header {
     padding: 6rem 1rem 1rem;
     border-bottom: 1px solid var(--border-color);
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--dark-blue-glass);
   }
 
   .mobile-menu-header h2 {
@@ -141,7 +141,7 @@ header {
     font-size: 1.1rem;
     font-weight: 500;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--border-color);
     text-align: left;
     box-sizing: border-box;
   }
