@@ -61,8 +61,98 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  
-  /* Media Queries para tornar o header responsivo */
+
+  /* === MENU LATERAL MOBILE === */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: var(--dark-blue-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid var(--border-color);
+    z-index: 1000;
+    transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu.active {
+    right: 0;
+  }
+
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--glass-overlay);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 999;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .mobile-menu-header {
+    padding: 6rem 1rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .mobile-menu-header h2 {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mobile-menu-items {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-items li {
+    margin: 0;
+    width: 100%;
+  }
+
+  .mobile-menu-items a {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  .mobile-menu-items a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 2rem;
+    transform: translateX(8px);
+  }
+
+  /* === MEDIA QUERIES === */
   
   /* Telas menores que 768px (tablets e celulares em modo paisagem) */
   @media (max-width: 768px) {
@@ -103,7 +193,9 @@ header {
       position: fixed;
       top: 20px;
       right: 20px;
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 1.8rem;
       color: var(--white);
       background: var(--dark-blue-glass);
@@ -113,8 +205,35 @@ header {
       width: 3rem;
       height: 3rem;
       z-index: 9999;
-      text-align: center;
-      line-height: 3rem;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 4px 16px var(--box-shadow);
+    }
+
+    #menu-icon:hover {
+      transform: scale(1.1);
+    }
+
+    #menu-icon.active {
+      transform: rotate(90deg);
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* Esconder elementos do menu quando não ativo */
+    .mobile-menu:not(.active) .mobile-menu-items li {
+      opacity: 0;
+      transform: translateX(100px);
     }
   }
   
