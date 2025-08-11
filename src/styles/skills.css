@@ -32,14 +32,14 @@
   }
 
   .heading span {
-    color: var(--blue);
+    color: var(--white);
   }
   
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
     margin: 0 auto;
     color: var(--white);
   }
@@ -50,7 +50,7 @@
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--border-color);
     padding: 2rem 1rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -83,9 +83,9 @@
   
   .skills-box i,
   .skills-box svg {
-    font-size: 4rem;
-    width: 4rem;
-    height: 4rem;
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
     color: var(--white);
     margin: 0 auto 1rem auto;
     display: block;
@@ -103,7 +103,7 @@
   }
   
   .skills-box h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: var(--white);
     margin: 0;
@@ -127,8 +127,8 @@
   /* Telas menores que 1280px */
   @media (max-width: 1280px) {
     .skills-container {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.3rem;
     }
 
     #skills .heading {
@@ -137,70 +137,38 @@
 
     .skills-box i,
     .skills-box svg {
-      font-size: 3.5rem;
-      width: 3.5rem;
-      height: 3.5rem;
-      margin: 0 auto 1rem auto;
+      font-size: 2.8rem;
+      width: 2.8rem;
+      height: 2.8rem;
+      margin: 0 auto 0.8rem auto;
     }
 
     .skills-box h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .skills-container .skills-box {
-      padding: 1.8rem 1rem;
+      padding: 1.3rem 0.8rem;
     }
   }
 
   /* Telas menores que 768px (tablets e celulares em modo paisagem) */
   @media (max-width: 768px) {
     #skills {
-      padding: 6rem 1.5rem;
+      padding: 5rem 1.5rem;
     }
 
     .skills-container {
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1.2rem;
+      max-width: 600px;
     }
 
     #skills .heading {
       font-size: 2rem;
-      margin-bottom: 3rem;
-    }
-
-    .skills-box i,
-    .skills-box svg {
-      font-size: 3rem;
-      width: 3rem;
-      height: 3rem;
-      margin: 0 auto 0.8rem auto;
-    }
-
-    .skills-box h3 {
-      font-size: 1.1rem;
-    }
-
-    .skills-container .skills-box {
-      padding: 1.5rem 0.8rem;
-    }
-  }
-  
-  /* Telas menores que 480px (celulares em modo retrato) */
-  @media (max-width: 480px) {
-    #skills {
-      padding: 5rem 1rem;
-    }
-
-    .skills-container {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.2rem;
-    }
-
-    #skills .heading {
-      font-size: 1.8rem;
       margin-bottom: 2.5rem;
     }
-  
+
     .skills-box i,
     .skills-box svg {
       font-size: 2.5rem;
@@ -208,13 +176,53 @@
       height: 2.5rem;
       margin: 0 auto 0.6rem auto;
     }
-  
+
     .skills-box h3 {
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     .skills-container .skills-box {
       padding: 1.2rem 0.6rem;
+    }
+  }
+  
+  /* Telas menores que 480px (celulares em modo retrato) */
+  @media (max-width: 480px) {
+    #skills {
+      padding: 4rem 1rem;
+    }
+
+    .skills-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 100%;
+    }
+
+    #skills .heading {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+  
+    .skills-box i,
+    .skills-box svg {
+      font-size: 2.2rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      margin: 0 auto 0.5rem auto;
+    }
+  
+    .skills-box h3 {
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+
+    .skills-container .skills-box {
+      padding: 1rem 0.5rem;
+      border-radius: 1rem;
+    }
+
+    .skills-container .skills-box:hover {
+      transform: translateY(-5px) scale(1.01);
     }
   }
   
